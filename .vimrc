@@ -46,4 +46,8 @@ if !isdirectory(expand(&directory))
     call mkdir(expand(&directory), "p")
 endif
 
-
+"Pretty colors
+syntax enable
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
