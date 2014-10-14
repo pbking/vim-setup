@@ -13,5 +13,5 @@ I use it on linux.  It might work on other enviornments I guess but I've never t
 
 Use git.  (duh)
 
-git clone --recursive https://github.com/pbking/vim-setup.git ~/.vim
-ln -s ~/.vim/.vimrc ~/.vimrc
+    git clone --recursive https://github.com/pbking/vim-setup.git ~/.vim
+    ln -s ~/.vim/.vimrc ~/.vimrc
