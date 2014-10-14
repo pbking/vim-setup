@@ -28,3 +28,22 @@ noremap <C-S-l> :tabnext<CR>
 noremap <C-S-k> :tabprevious<CR>
 noremap <C-S-h> :tabclose<CR>
 
+" Get those annoying temporary files out of the working directory
+set backup                       " enable backups
+set undodir=~/.vim/tmp/undo/     " undo files
+set backupdir=~/.vim/tmp/backup/ " backups
+set directory=~/.vim/tmp/swap/   " swap files
+let g:yankring_history_dir='~/.vim/tmp/yankring'
+
+" Make those folders automatically if they don't already exist.
+if !isdirectory(expand(&undodir))
+    call mkdir(expand(&undodir), "p")
+endif
+if !isdirectory(expand(&backupdir))
+    call mkdir(expand(&backupdir), "p")
+endif
+if !isdirectory(expand(&directory))
+    call mkdir(expand(&directory), "p")
+endif
+
+
