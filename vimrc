@@ -17,6 +17,9 @@ set expandtab
 set autoindent
 set copyindent
 set nowrap
+set autoread
+set scrolloff=5
+set title
 
 " Plugin Setup and Such
 
@@ -37,10 +40,13 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-sensible'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()
 filetype plugin indent on
 
+" Show buffers at the top (like groovy tabs)
+let g:airline#extensions#tabline#enabled = 1
 
 " Pretty Colors
 
@@ -75,12 +81,18 @@ nnoremap j gj
 nnoremap k gk
 
 " scroll
-nnoremap <C-j> 10j
-nnoremap <C-k> 10k
+nnoremap <C-j> 10gj
+nnoremap <C-k> 10gk
+nnoremap <C-l> $
+nnoremap <C-h> ^
 
-nnoremap <C-n> :NERDTreeTabsToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
-noremap <C-l> :tabnext<CR>
-noremap <C-k> :tabprevious<CR>
-noremap <C-h> :tabclose<CR>
+" Copy and Paste
+vmap <C-space> "*y
+nmap <C-space> "*p
+
+" buffer switching
+nnoremap <C-o> :bnext<CR>
+nnoremap <C-i> :bprevious<CR>
 
