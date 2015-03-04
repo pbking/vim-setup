@@ -50,10 +50,10 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Pretty Colors
 
-"colorscheme solarized
-"set background=dark
+colorscheme solarized
+set background=dark
 "let g:solarized_termcolors=256
-"set t_Co=256
+set t_Co=256
 
 " Get those annoying temporary files out of the working directory
 
