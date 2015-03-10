@@ -48,15 +48,13 @@ filetype plugin indent on
 " Show buffers at the top (like groovy tabs)
 let g:airline#extensions#tabline#enabled = 1
 
-" Pretty Colors
-
-colorscheme solarized
-set background=dark
+" Pretty Colors (off by default 'cause my terms is usually the purty)
+"colorscheme solarized
+"set background=dark
 "let g:solarized_termcolors=256
-set t_Co=256
+"set t_Co=256
 
 " Get those annoying temporary files out of the working directory
-
 set backup                       " enable backups
 set undodir=~/.vim/tmp/undo/     " undo files
 set backupdir=~/.vim/tmp/backup/ " backups
@@ -73,6 +71,8 @@ if !isdirectory(expand(&directory))
   call mkdir(expand(&directory), "p")
 endif
 
+" Because what the hell is Modula-2?
+autocmd BufNewFile,BufRead *.md set filetype=markdown
 
 " Bindings and Such
 
@@ -88,7 +88,7 @@ nnoremap <C-h> ^
 
 nnoremap <C-n> :NERDTreeToggle<CR>
 
-" Copy and Paste
+" Copy and Paste (ctrl+space to use system clipboard)
 vmap <C-space> "*y
 nmap <C-space> "*p
 
