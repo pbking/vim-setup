@@ -20,6 +20,7 @@ set nowrap
 set autoread
 set scrolloff=5
 set title
+set whichwrap+=<,>,[,],h,l
 
 " Plugin Setup and Such
 
