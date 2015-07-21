@@ -33,7 +33,6 @@ call vundle#begin()
 " Vundle Plugins Go here
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'pangloss/vim-javascript'
