@@ -96,5 +96,4 @@ nmap <C-space> "*p
 " buffer switching
 nnoremap <C-o> :bnext<CR>
 nnoremap <C-i> :bprevious<CR>
-nnoremap <C-u> :bdelete<CR>
-
+nnoremap <C-u> :bp<CR>:bd #<CR>
