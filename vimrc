@@ -1,5 +1,6 @@
-filetype off                 
-syntax enable
+filetype plugin indent on 
+syntax on
+
 set nocompatible              
 set hidden
 set wildmenu
@@ -41,9 +42,9 @@ Plugin 'tpope/vim-sensible'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-commentary'
+Plugin 'othree/html5.vim'
 
 call vundle#end()
-filetype plugin indent on
 
 " Show buffers at the top (like groovy tabs)
 let g:airline#extensions#tabline#enabled = 1
@@ -96,3 +97,6 @@ nmap <C-space> "*p
 nnoremap <C-o> :bnext<CR>
 nnoremap <C-i> :bprevious<CR>
 nnoremap <C-u> :bp<CR>:bd #<CR>
+
+" NERDTree width
+let g:NERDTreeWinSize = 40
