@@ -43,6 +43,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'othree/html5.vim'
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()
 
@@ -74,6 +75,9 @@ endif
 
 " Because what the hell is Modula-2?
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+
+" Typescript whatnot
+autocmd BufRead,BufNewFile *.ts set filetype=typescript
 
 " Bindings and Such
 
