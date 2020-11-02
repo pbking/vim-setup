@@ -1,3 +1,4 @@
+" This is the beginning of the configuration
 filetype plugin indent on 
 syntax on
 
